@@ -1,0 +1,20 @@
+{
+  "name": "cre-home",
+  "version": "1.0.0",
+  "description": "Cytonn Code Challenge 1",
+  "main": "index.js",
+  "dependencies": {
+    "foundation-sites": "^6.7.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch assets/scss -o assets/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cre-home-challenge"
+  },
+  "author": "Vinn Njeru",
+  "license": "ISC"
+}
