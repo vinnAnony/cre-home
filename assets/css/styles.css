@@ -5,7 +5,6 @@
  * https://get.foundation
  * Licensed under MIT Open Source
  */
-@import url(../../node_modules/foundation-sites/dist/css/foundation.css);
 @media print, screen and (min-width: 40em) {
   .reveal, .reveal.tiny, .reveal.small, .reveal.large {
     right: auto;
@@ -2290,6 +2289,18 @@ code, .code-inline {
   .button.alert:hover, .button.alert:focus {
     background-color: #a53b2a;
     color: #fefefe; }
+  .button.cre-angel, .button.cre-angel.disabled, .button.cre-angel[disabled], .button.cre-angel.disabled:hover, .button.cre-angel[disabled]:hover, .button.cre-angel.disabled:focus, .button.cre-angel[disabled]:focus {
+    background-color: #fff;
+    color: #0a0a0a; }
+  .button.cre-angel:hover, .button.cre-angel:focus {
+    background-color: #cccccc;
+    color: #0a0a0a; }
+  .button.cre-cloud, .button.cre-cloud.disabled, .button.cre-cloud[disabled], .button.cre-cloud.disabled:hover, .button.cre-cloud[disabled]:hover, .button.cre-cloud.disabled:focus, .button.cre-cloud[disabled]:focus {
+    background-color: #818283;
+    color: #0a0a0a; }
+  .button.cre-cloud:hover, .button.cre-cloud:focus {
+    background-color: #676869;
+    color: #0a0a0a; }
   .button.hollow, .button.hollow:hover, .button.hollow:focus, .button.hollow.disabled, .button.hollow.disabled:hover, .button.hollow.disabled:focus, .button.hollow[disabled], .button.hollow[disabled]:hover, .button.hollow[disabled]:focus {
     background-color: transparent; }
   .button.hollow, .button.hollow.disabled, .button.hollow[disabled], .button.hollow.disabled:hover, .button.hollow[disabled]:hover, .button.hollow.disabled:focus, .button.hollow[disabled]:focus {
@@ -2328,6 +2339,18 @@ code, .code-inline {
   .button.hollow.alert:hover, .button.hollow.alert:focus {
     border-color: #67251a;
     color: #67251a; }
+  .button.hollow.cre-angel, .button.hollow.cre-angel.disabled, .button.hollow.cre-angel[disabled], .button.hollow.cre-angel.disabled:hover, .button.hollow.cre-angel[disabled]:hover, .button.hollow.cre-angel.disabled:focus, .button.hollow.cre-angel[disabled]:focus {
+    border: 1px solid #fff;
+    color: #fff; }
+  .button.hollow.cre-angel:hover, .button.hollow.cre-angel:focus {
+    border-color: gray;
+    color: gray; }
+  .button.hollow.cre-cloud, .button.hollow.cre-cloud.disabled, .button.hollow.cre-cloud[disabled], .button.hollow.cre-cloud.disabled:hover, .button.hollow.cre-cloud[disabled]:hover, .button.hollow.cre-cloud.disabled:focus, .button.hollow.cre-cloud[disabled]:focus {
+    border: 1px solid #818283;
+    color: #818283; }
+  .button.hollow.cre-cloud:hover, .button.hollow.cre-cloud:focus {
+    border-color: #404142;
+    color: #404142; }
   .button.clear, .button.clear:hover, .button.clear:focus, .button.clear.disabled, .button.clear.disabled:hover, .button.clear.disabled:focus, .button.clear[disabled], .button.clear[disabled]:hover, .button.clear[disabled]:focus {
     border-color: transparent;
     background-color: transparent; }
@@ -2355,6 +2378,14 @@ code, .code-inline {
     color: #cc4b37; }
   .button.clear.alert:hover, .button.clear.alert:focus {
     color: #67251a; }
+  .button.clear.cre-angel, .button.clear.cre-angel.disabled, .button.clear.cre-angel[disabled], .button.clear.cre-angel.disabled:hover, .button.clear.cre-angel[disabled]:hover, .button.clear.cre-angel.disabled:focus, .button.clear.cre-angel[disabled]:focus {
+    color: #fff; }
+  .button.clear.cre-angel:hover, .button.clear.cre-angel:focus {
+    color: gray; }
+  .button.clear.cre-cloud, .button.clear.cre-cloud.disabled, .button.clear.cre-cloud[disabled], .button.clear.cre-cloud.disabled:hover, .button.clear.cre-cloud[disabled]:hover, .button.clear.cre-cloud.disabled:focus, .button.clear.cre-cloud[disabled]:focus {
+    color: #818283; }
+  .button.clear.cre-cloud:hover, .button.clear.cre-cloud:focus {
+    color: #404142; }
   .button.disabled, .button[disabled] {
     opacity: 0.25;
     cursor: not-allowed; }
@@ -2384,6 +2415,10 @@ code, .code-inline {
     border-top-color: #ffae00; }
   .button.dropdown.hollow.alert::after, .button.dropdown.clear.alert::after {
     border-top-color: #cc4b37; }
+  .button.dropdown.hollow.cre-angel::after, .button.dropdown.clear.cre-angel::after {
+    border-top-color: #fff; }
+  .button.dropdown.hollow.cre-cloud::after, .button.dropdown.clear.cre-cloud::after {
+    border-top-color: #818283; }
   .button.arrow-only::after {
     top: -0.1em;
     float: none;
@@ -2453,6 +2488,18 @@ a.button:hover, a.button:focus {
   .button-group.alert .button:hover, .button-group.alert .button:focus {
     background-color: #a53b2a;
     color: #fefefe; }
+  .button-group.cre-angel .button, .button-group.cre-angel .button.disabled, .button-group.cre-angel .button[disabled], .button-group.cre-angel .button.disabled:hover, .button-group.cre-angel .button[disabled]:hover, .button-group.cre-angel .button.disabled:focus, .button-group.cre-angel .button[disabled]:focus {
+    background-color: #fff;
+    color: #0a0a0a; }
+  .button-group.cre-angel .button:hover, .button-group.cre-angel .button:focus {
+    background-color: #cccccc;
+    color: #0a0a0a; }
+  .button-group.cre-cloud .button, .button-group.cre-cloud .button.disabled, .button-group.cre-cloud .button[disabled], .button-group.cre-cloud .button.disabled:hover, .button-group.cre-cloud .button[disabled]:hover, .button-group.cre-cloud .button.disabled:focus, .button-group.cre-cloud .button[disabled]:focus {
+    background-color: #818283;
+    color: #0a0a0a; }
+  .button-group.cre-cloud .button:hover, .button-group.cre-cloud .button:focus {
+    background-color: #676869;
+    color: #0a0a0a; }
   .button-group.hollow .button, .button-group.hollow .button:hover, .button-group.hollow .button:focus, .button-group.hollow .button.disabled, .button-group.hollow .button.disabled:hover, .button-group.hollow .button.disabled:focus, .button-group.hollow .button[disabled], .button-group.hollow .button[disabled]:hover, .button-group.hollow .button[disabled]:focus {
     background-color: transparent; }
   .button-group.hollow .button, .button-group.hollow .button.disabled, .button-group.hollow .button[disabled], .button-group.hollow .button.disabled:hover, .button-group.hollow .button[disabled]:hover, .button-group.hollow .button.disabled:focus, .button-group.hollow .button[disabled]:focus {
@@ -2491,6 +2538,18 @@ a.button:hover, a.button:focus {
   .button-group.hollow.alert .button:hover, .button-group.hollow.alert .button:focus, .button-group.hollow .button.alert:hover, .button-group.hollow .button.alert:focus {
     border-color: #67251a;
     color: #67251a; }
+  .button-group.hollow.cre-angel .button, .button-group.hollow.cre-angel .button.disabled, .button-group.hollow.cre-angel .button[disabled], .button-group.hollow.cre-angel .button.disabled:hover, .button-group.hollow.cre-angel .button[disabled]:hover, .button-group.hollow.cre-angel .button.disabled:focus, .button-group.hollow.cre-angel .button[disabled]:focus, .button-group.hollow .button.cre-angel, .button-group.hollow .button.cre-angel.disabled, .button-group.hollow .button.cre-angel[disabled], .button-group.hollow .button.cre-angel.disabled:hover, .button-group.hollow .button.cre-angel[disabled]:hover, .button-group.hollow .button.cre-angel.disabled:focus, .button-group.hollow .button.cre-angel[disabled]:focus {
+    border: 1px solid #fff;
+    color: #fff; }
+  .button-group.hollow.cre-angel .button:hover, .button-group.hollow.cre-angel .button:focus, .button-group.hollow .button.cre-angel:hover, .button-group.hollow .button.cre-angel:focus {
+    border-color: gray;
+    color: gray; }
+  .button-group.hollow.cre-cloud .button, .button-group.hollow.cre-cloud .button.disabled, .button-group.hollow.cre-cloud .button[disabled], .button-group.hollow.cre-cloud .button.disabled:hover, .button-group.hollow.cre-cloud .button[disabled]:hover, .button-group.hollow.cre-cloud .button.disabled:focus, .button-group.hollow.cre-cloud .button[disabled]:focus, .button-group.hollow .button.cre-cloud, .button-group.hollow .button.cre-cloud.disabled, .button-group.hollow .button.cre-cloud[disabled], .button-group.hollow .button.cre-cloud.disabled:hover, .button-group.hollow .button.cre-cloud[disabled]:hover, .button-group.hollow .button.cre-cloud.disabled:focus, .button-group.hollow .button.cre-cloud[disabled]:focus {
+    border: 1px solid #818283;
+    color: #818283; }
+  .button-group.hollow.cre-cloud .button:hover, .button-group.hollow.cre-cloud .button:focus, .button-group.hollow .button.cre-cloud:hover, .button-group.hollow .button.cre-cloud:focus {
+    border-color: #404142;
+    color: #404142; }
   .button-group.clear .button, .button-group.clear .button:hover, .button-group.clear .button:focus, .button-group.clear .button.disabled, .button-group.clear .button.disabled:hover, .button-group.clear .button.disabled:focus, .button-group.clear .button[disabled], .button-group.clear .button[disabled]:hover, .button-group.clear .button[disabled]:focus {
     border-color: transparent;
     background-color: transparent; }
@@ -2518,6 +2577,14 @@ a.button:hover, a.button:focus {
     color: #cc4b37; }
   .button-group.clear.alert .button:hover, .button-group.clear.alert .button:focus, .button-group.clear .button.alert:hover, .button-group.clear .button.alert:focus {
     color: #67251a; }
+  .button-group.clear.cre-angel .button, .button-group.clear.cre-angel .button.disabled, .button-group.clear.cre-angel .button[disabled], .button-group.clear.cre-angel .button.disabled:hover, .button-group.clear.cre-angel .button[disabled]:hover, .button-group.clear.cre-angel .button.disabled:focus, .button-group.clear.cre-angel .button[disabled]:focus, .button-group.clear .button.cre-angel, .button-group.clear .button.cre-angel.disabled, .button-group.clear .button.cre-angel[disabled], .button-group.clear .button.cre-angel.disabled:hover, .button-group.clear .button.cre-angel[disabled]:hover, .button-group.clear .button.cre-angel.disabled:focus, .button-group.clear .button.cre-angel[disabled]:focus {
+    color: #fff; }
+  .button-group.clear.cre-angel .button:hover, .button-group.clear.cre-angel .button:focus, .button-group.clear .button.cre-angel:hover, .button-group.clear .button.cre-angel:focus {
+    color: gray; }
+  .button-group.clear.cre-cloud .button, .button-group.clear.cre-cloud .button.disabled, .button-group.clear.cre-cloud .button[disabled], .button-group.clear.cre-cloud .button.disabled:hover, .button-group.clear.cre-cloud .button[disabled]:hover, .button-group.clear.cre-cloud .button.disabled:focus, .button-group.clear.cre-cloud .button[disabled]:focus, .button-group.clear .button.cre-cloud, .button-group.clear .button.cre-cloud.disabled, .button-group.clear .button.cre-cloud[disabled], .button-group.clear .button.cre-cloud.disabled:hover, .button-group.clear .button.cre-cloud[disabled]:hover, .button-group.clear .button.cre-cloud.disabled:focus, .button-group.clear .button.cre-cloud[disabled]:focus {
+    color: #818283; }
+  .button-group.clear.cre-cloud .button:hover, .button-group.clear.cre-cloud .button:focus, .button-group.clear .button.cre-cloud:hover, .button-group.clear .button.cre-cloud:focus {
+    color: #404142; }
   .button-group.no-gaps .button {
     margin-right: -0.0625rem; }
     .button-group.no-gaps .button + .button {
@@ -2596,6 +2663,12 @@ a.button:hover, a.button:focus {
   .label.alert {
     background: #cc4b37;
     color: #fefefe; }
+  .label.cre-angel {
+    background: #fff;
+    color: #0a0a0a; }
+  .label.cre-cloud {
+    background: #818283;
+    color: #0a0a0a; }
 
 .progress {
   height: 1rem;
@@ -2612,6 +2685,10 @@ a.button:hover, a.button:focus {
     background-color: #ffae00; }
   .progress.alert .progress-meter {
     background-color: #cc4b37; }
+  .progress.cre-angel .progress-meter {
+    background-color: #fff; }
+  .progress.cre-cloud .progress-meter {
+    background-color: #818283; }
 
 .progress-meter {
   position: relative;
@@ -2903,6 +2980,12 @@ table.hover:not(.unstriped) tr:nth-of-type(even):hover {
   .badge.alert {
     background: #cc4b37;
     color: #fefefe; }
+  .badge.cre-angel {
+    background: #fff;
+    color: #0a0a0a; }
+  .badge.cre-cloud {
+    background: #818283;
+    color: #0a0a0a; }
 
 .breadcrumbs {
   margin: 0 0 1rem 0;
@@ -2960,6 +3043,12 @@ table.hover:not(.unstriped) tr:nth-of-type(even):hover {
     color: #0a0a0a; }
   .callout.alert {
     background-color: #f7e4e1;
+    color: #0a0a0a; }
+  .callout.cre-angel {
+    background-color: white;
+    color: #0a0a0a; }
+  .callout.cre-cloud {
+    background-color: #ececec;
     color: #0a0a0a; }
   .callout.small {
     padding-top: 0.5rem;
@@ -4839,12 +4928,489 @@ html.is-reveal-open {
 .is-stuck .hide-for-sticky {
   display: none; }
 
+.text-hide {
+  font: 0/0 a !important;
+  color: transparent !important;
+  text-shadow: none !important;
+  background-color: transparent !important;
+  border: 0 !important; }
+
+.text-truncate {
+  max-width: 100% !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis;
+  white-space: nowrap !important; }
+
+.text-nowrap {
+  white-space: nowrap !important; }
+
+.text-wrap {
+  word-wrap: break-word !important; }
+
+.text-lowercase {
+  text-transform: lowercase !important; }
+
+.text-uppercase {
+  text-transform: uppercase !important; }
+
+.text-capitalize {
+  text-transform: capitalize !important; }
+
+.text-overline {
+  text-decoration: overline !important; }
+
+.text-underline {
+  text-decoration: underline !important; }
+
+.text-line-through {
+  text-decoration: line-through !important; }
+
+.font-wide {
+  letter-spacing: 0.25rem; }
+
+.font-normal {
+  font-weight: normal; }
+
+.font-bold {
+  font-weight: bold; }
+
+.font-italic {
+  font-style: italic !important; }
+
+ul.list-disc {
+  list-style-type: disc !important; }
+
+ul.list-circle {
+  list-style-type: circle !important; }
+
+ul.list-square {
+  list-style-type: square !important; }
+
+ol.list-decimal {
+  list-style-type: decimal !important; }
+
+ol.list-lower-alpha {
+  list-style-type: lower-alpha !important; }
+
+ol.list-lower-latin {
+  list-style-type: lower-latin !important; }
+
+ol.list-lower-roman {
+  list-style-type: lower-roman !important; }
+
+ol.list-upper-alpha {
+  list-style-type: upper-alpha !important; }
+
+ol.list-upper-latin {
+  list-style-type: upper-latin !important; }
+
+ol.list-upper-roman {
+  list-style-type: upper-roman !important; }
+
+.rounded {
+  border-radius: 5000px !important; }
+  .rounded .switch-paddle {
+    border-radius: 5000px !important; }
+    .rounded .switch-paddle:after {
+      border-radius: 50%; }
+
+.radius {
+  border-radius: 0.1875rem; }
+
+.bordered {
+  border: 0.0625rem solid #cacaca; }
+
+.shadow {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); }
+
+.arrow-down {
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0.4375rem;
+  content: '';
+  border-bottom-width: 0;
+  border-color: #0a0a0a transparent transparent; }
+
+.arrow-up {
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0.4375rem;
+  content: '';
+  border-top-width: 0;
+  border-color: transparent transparent #0a0a0a; }
+
+.arrow-right {
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0.4375rem;
+  content: '';
+  border-right-width: 0;
+  border-color: transparent transparent transparent #0a0a0a; }
+
+.arrow-left {
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0.4375rem;
+  content: '';
+  border-left-width: 0;
+  border-color: transparent #0a0a0a transparent transparent; }
+
+.separator-center {
+  text-align: center !important; }
+  .separator-center::before, .separator-center::after {
+    display: table;
+    content: ' ';
+    flex-basis: 0;
+    order: 1; }
+  .separator-center::after {
+    clear: both; }
+  .separator-center::after {
+    position: relative !important;
+    width: 3rem;
+    border-bottom: 0.125rem solid #1779ba;
+    margin: 1rem auto 0; }
+
+.separator-left {
+  text-align: left !important; }
+  .separator-left::before, .separator-left::after {
+    display: table;
+    content: ' ';
+    flex-basis: 0;
+    order: 1; }
+  .separator-left::after {
+    clear: both; }
+  .separator-left::after {
+    position: relative !important;
+    width: 3rem;
+    border-bottom: 0.125rem solid #1779ba;
+    margin: 1rem auto 0;
+    margin-left: 0 !important; }
+
+.separator-right {
+  text-align: right !important; }
+  .separator-right::before, .separator-right::after {
+    display: table;
+    content: ' ';
+    flex-basis: 0;
+    order: 1; }
+  .separator-right::after {
+    clear: both; }
+  .separator-right::after {
+    position: relative !important;
+    width: 3rem;
+    border-bottom: 0.125rem solid #1779ba;
+    margin: 1rem auto 0;
+    margin-right: 0 !important; }
+
+.overflow-visible {
+  overflow: visible !important; }
+
+.overflow-x-visible {
+  overflow-x: visible !important; }
+
+.overflow-y-visible {
+  overflow-y: visible !important; }
+
+.overflow-hidden {
+  overflow: hidden !important; }
+
+.overflow-x-hidden {
+  overflow-x: hidden !important; }
+
+.overflow-y-hidden {
+  overflow-y: hidden !important; }
+
+.overflow-scroll {
+  overflow: scroll !important;
+  -webkit-overflow-scrolling: touch; }
+
+.overflow-x-scroll {
+  overflow-x: scroll !important;
+  -webkit-overflow-scrolling: touch; }
+
+.overflow-y-scroll {
+  overflow-y: scroll !important;
+  -webkit-overflow-scrolling: touch; }
+
+.display-inline {
+  display: inline !important; }
+
+.display-inline-block {
+  display: inline-block !important; }
+
+.display-block {
+  display: block !important; }
+
+.display-table {
+  display: table !important; }
+
+.display-table-cell {
+  display: table-cell !important; }
+
+.position-static {
+  position: static !important; }
+
+.position-relative {
+  position: relative !important; }
+
+.position-absolute {
+  position: absolute !important; }
+
+.position-fixed {
+  position: fixed !important; }
+
+.position-fixed-top {
+  position: fixed !important;
+  top: 0rem !important;
+  right: 0rem !important;
+  left: 0rem !important;
+  z-index: 975; }
+
+.position-fixed-bottom {
+  position: fixed !important;
+  right: 0rem !important;
+  bottom: 0rem !important;
+  left: 0rem !important;
+  z-index: 975; }
+
+.border-box {
+  box-sizing: border-box !important; }
+
+.border-none {
+  border: 0 !important; }
+
+.width-25 {
+  width: 25% !important; }
+
+.width-50 {
+  width: 50% !important; }
+
+.width-75 {
+  width: 75% !important; }
+
+.width-100 {
+  width: 100% !important; }
+
+.height-25 {
+  height: 25% !important; }
+
+.height-50 {
+  height: 50% !important; }
+
+.height-75 {
+  height: 75% !important; }
+
+.height-100 {
+  height: 100% !important; }
+
+.max-width-100 {
+  max-width: 100% !important; }
+
+.max-height-100 {
+  max-height: 100% !important; }
+
+.margin-0 {
+  margin: 0rem !important; }
+
+.margin-top-0 {
+  margin-top: 0rem !important; }
+
+.margin-right-0 {
+  margin-right: 0rem !important; }
+
+.margin-bottom-0 {
+  margin-bottom: 0rem !important; }
+
+.margin-left-0 {
+  margin-left: 0rem !important; }
+
+.margin-horizontal-0 {
+  margin-right: 0rem !important;
+  margin-left: 0rem !important; }
+
+.margin-vertical-0 {
+  margin-top: 0rem !important;
+  margin-bottom: 0rem !important; }
+
+.padding-0 {
+  padding: 0rem !important; }
+
+.padding-top-0 {
+  padding-top: 0rem !important; }
+
+.padding-right-0 {
+  padding-right: 0rem !important; }
+
+.padding-bottom-0 {
+  padding-bottom: 0rem !important; }
+
+.padding-left-0 {
+  padding-left: 0rem !important; }
+
+.padding-horizontal-0 {
+  padding-right: 0rem !important;
+  padding-left: 0rem !important; }
+
+.padding-vertical-0 {
+  padding-top: 0rem !important;
+  padding-bottom: 0rem !important; }
+
+.margin-1 {
+  margin: 1rem !important; }
+
+.margin-top-1 {
+  margin-top: 1rem !important; }
+
+.margin-right-1 {
+  margin-right: 1rem !important; }
+
+.margin-bottom-1 {
+  margin-bottom: 1rem !important; }
+
+.margin-left-1 {
+  margin-left: 1rem !important; }
+
+.margin-horizontal-1 {
+  margin-right: 1rem !important;
+  margin-left: 1rem !important; }
+
+.margin-vertical-1 {
+  margin-top: 1rem !important;
+  margin-bottom: 1rem !important; }
+
+.padding-1 {
+  padding: 1rem !important; }
+
+.padding-top-1 {
+  padding-top: 1rem !important; }
+
+.padding-right-1 {
+  padding-right: 1rem !important; }
+
+.padding-bottom-1 {
+  padding-bottom: 1rem !important; }
+
+.padding-left-1 {
+  padding-left: 1rem !important; }
+
+.padding-horizontal-1 {
+  padding-right: 1rem !important;
+  padding-left: 1rem !important; }
+
+.padding-vertical-1 {
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important; }
+
+.margin-2 {
+  margin: 2rem !important; }
+
+.margin-top-2 {
+  margin-top: 2rem !important; }
+
+.margin-right-2 {
+  margin-right: 2rem !important; }
+
+.margin-bottom-2 {
+  margin-bottom: 2rem !important; }
+
+.margin-left-2 {
+  margin-left: 2rem !important; }
+
+.margin-horizontal-2 {
+  margin-right: 2rem !important;
+  margin-left: 2rem !important; }
+
+.margin-vertical-2 {
+  margin-top: 2rem !important;
+  margin-bottom: 2rem !important; }
+
+.padding-2 {
+  padding: 2rem !important; }
+
+.padding-top-2 {
+  padding-top: 2rem !important; }
+
+.padding-right-2 {
+  padding-right: 2rem !important; }
+
+.padding-bottom-2 {
+  padding-bottom: 2rem !important; }
+
+.padding-left-2 {
+  padding-left: 2rem !important; }
+
+.padding-horizontal-2 {
+  padding-right: 2rem !important;
+  padding-left: 2rem !important; }
+
+.padding-vertical-2 {
+  padding-top: 2rem !important;
+  padding-bottom: 2rem !important; }
+
+.margin-3 {
+  margin: 3rem !important; }
+
+.margin-top-3 {
+  margin-top: 3rem !important; }
+
+.margin-right-3 {
+  margin-right: 3rem !important; }
+
+.margin-bottom-3 {
+  margin-bottom: 3rem !important; }
+
+.margin-left-3 {
+  margin-left: 3rem !important; }
+
+.margin-horizontal-3 {
+  margin-right: 3rem !important;
+  margin-left: 3rem !important; }
+
+.margin-vertical-3 {
+  margin-top: 3rem !important;
+  margin-bottom: 3rem !important; }
+
+.padding-3 {
+  padding: 3rem !important; }
+
+.padding-top-3 {
+  padding-top: 3rem !important; }
+
+.padding-right-3 {
+  padding-right: 3rem !important; }
+
+.padding-bottom-3 {
+  padding-bottom: 3rem !important; }
+
+.padding-left-3 {
+  padding-left: 3rem !important; }
+
+.padding-horizontal-3 {
+  padding-right: 3rem !important;
+  padding-left: 3rem !important; }
+
+.padding-vertical-3 {
+  padding-top: 3rem !important;
+  padding-bottom: 3rem !important; }
+
 @font-face {
   font-family: ProximaNova;
   src: url(../fonts/proxima_nova_font.otf); }
 
 body {
   font-family: ProximaNova, serif; }
+
+hr {
+  color: #1d1d1e;
+  margin: 0; }
 
 .myBanner {
   color: #ffffff;
@@ -4859,16 +5425,8 @@ body {
   width: 100%;
   align-items: center;
   justify-content: center;
-  background-image: url("../images/the-ridge-bg.jpeg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url("../images/the-ridge-bg.jpeg");
   background-size: cover; }
-
-.home-bg-image::before {
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  background-color: rgba(107, 255, 143, 0.55); }
 
 .filter-home-form {
   background: #ffffff !important;
@@ -4881,6 +5439,125 @@ body {
   .filter-home-form .range-span {
     color: #f4841e !important; }
 
+i.fi-magnifying-glass {
+  color: #ffffff;
+  font-size: 1.3rem;
+  margin-bottom: 0 !important;
+  margin-left: 2px;
+  margin-right: 10px; }
+
+.orange-btn {
+  background-color: #f4841e !important; }
+
+.white-text {
+  color: #ffffff !important; }
+
+.dark-text {
+  color: #000001 !important; }
+
+.grey-text {
+  color: #818283 !important; }
+
+.lime-green-text {
+  color: #99d053; }
+
+.transparent-bg {
+  background-color: rgba(0, 0, 0, 0.5) !important; }
+
+.footer-1-bg {
+  background-color: #121314; }
+
+.footer-2-bg {
+  background-color: #000001; }
+
+.white-bg {
+  background-color: #ffffff; }
+
+.shade-white-bg {
+  background-color: #eeeff0; }
+
+.lime-green-bg {
+  background-color: #99d053; }
+
+.green-yellow-gradient-bg {
+  background: linear-gradient(to right, rgba(0, 114, 92, 0.827), rgba(147, 204, 83, 0.7)); }
+
+.no-border {
+  border: none !important; }
+
+.round-btn {
+  border-radius: 20px; }
+
+.round-btn-mid {
+  border-radius: 5px; }
+  .round-btn-mid .fi-magnifying-glass {
+    color: black; }
+
+.more-section {
+  padding-top: 50px; }
+
+.green-bg {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../images/greenish-bg.jpeg");
+  background-size: cover; }
+
+.amara-bg {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url("../images/ama-ridge-pool.png");
+  background-size: cover; }
+
+.situ-bg {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url("../images/situ-village.jpeg");
+  background-size: cover; }
+
+.alma-bg {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  background-color: #8c1930;
+  background-size: cover; }
+
+.heights-bg {
+  position: relative;
+  height: 50vh;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(to right, rgba(44, 35, 15, 0.827), rgba(253, 197, 21, 0.7)), url("../images/height-bg.jpeg");
+  background-size: 100% 100%; }
+
+i.fi-bookmark {
+  font-size: 2rem; }
+
+.social-icon {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%; }
+
+.article-img {
+  height: 241px;
+  width: auto;
+  min-width: 100%;
+  min-height: 100%; }
+
 .myNav {
   background-color: #20252f !important; }
   .myNav ul {
@@ -4888,8 +5565,7 @@ body {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: transparent;
-    border-radius: 10px; }
+    background-color: transparent; }
   .myNav li {
     float: left; }
     .myNav li a {

@@ -1,6 +1,6 @@
 @import "../../node_modules/foundation-sites/scss/foundation.scss";
-@import "../../node_modules/foundation-sites/dist/css/foundation.css";
-@include foundation-everything;
+//@import "../../node_modules/foundation-sites/dist/css/foundation.css";
+@include foundation-everything($prototype: true);
 
 @font-face {
   font-family: ProximaNova;
@@ -12,12 +12,28 @@
 }
 
 $cre-blue: rgb(37,159,233);
-$cre-black: rgb(32,37,47);
+$cre-black: rgb(0,0,1);
 $cre-white: #ffffff;
+$cre-white-shade: rgb(238,239,240);
 $cre-orange: rgb(244,132,30);
+$cre-grey: rgb(129, 130, 131);
+$cre-transparent: rgb(0,0,0);
+$cre-lime-green: rgb(153,208,83);
+$cre-header: rgb(32,37,47);
+$cre-footer-1: rgb(18,19,20);
+$cre-footer-2: $cre-black;
+
+//Change default values
+$slider-handle-background: $cre-orange;
+$slider-fill-background: $cre-orange;
 
 body{
   font-family: ProximaNova, serif;
+}
+
+hr{
+  color: rgb(29,29,30);
+  margin: 0;
 }
 
 .myBanner{
@@ -34,16 +50,8 @@ body{
   width: 100%;
   align-items: center;
   justify-content: center;
-  background-image: url('../images/the-ridge-bg.jpeg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url('../images/the-ridge-bg.jpeg');
   background-size: cover;
-}
-.home-bg-image::before {
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  background-color: rgba(107, 255, 143, 0.55);
 }
 
 .filter-home-form{
@@ -60,11 +68,156 @@ body{
     color: $cre-orange !important;
   }
 }
+i.fi-magnifying-glass {
+  color: $cre-white;
+  font-size: 1.3rem;
+  margin-bottom: 0 !important;
+  margin-left: 2px;
+  margin-right: 10px;
+}
+
+.orange-btn{
+  background-color: $cre-orange !important;
+}
+
+.white-text{
+  color: $cre-white !important;
+}
+
+.dark-text{
+  color: $cre-black !important;
+}
+
+.grey-text{
+  color: $cre-grey !important;
+}
+
+.lime-green-text{
+  color: $cre-lime-green;
+}
+
+.transparent-bg{
+  background-color: rgba(0, 0, 0, 0.5) !important;
+}
+
+.footer-1-bg{
+  background-color: $cre-footer-1;
+}
+
+.footer-2-bg{
+  background-color: $cre-footer-2;
+}
+
+.white-bg{
+  background-color: $cre-white;
+}
+
+.shade-white-bg{
+  background-color: $cre-white-shade;
+}
+
+.lime-green-bg{
+  background-color: $cre-lime-green;
+}
+
+.green-yellow-gradient-bg{
+  background: linear-gradient(to right,rgba(0, 114, 92, 0.827), rgba(147, 204, 83, 0.7));
+}
+
+.no-border{
+  border: none !important;
+}
+
+.round-btn{
+  border-radius: 20px;
+}
+
+.round-btn-mid{
+  border-radius: 5px;
+
+  .fi-magnifying-glass{
+    color: $cre-transparent;
+  }
+}
+
+.more-section{
+  padding-top: 50px;
+
+}
+.green-bg{
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  background-image: url('../images/greenish-bg.jpeg');
+  background-size: cover;
+}
+
+.amara-bg{
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url('../images/ama-ridge-pool.png');
+  background-size: cover;
+}
+
+.situ-bg{
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url('../images/situ-village.jpeg');
+  background-size: cover;
+}
+
+.alma-bg{
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(140,25,48);
+  background-size: cover;
+}
+
+.heights-bg{
+  position: relative;
+  height: 50vh;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(to right,rgba(44, 35, 15, 0.827), rgba(253, 197, 21, 0.7)) , url('../images/height-bg.jpeg');
+  background-size: 100% 100%;
+}
+
+i.fi-bookmark {
+  font-size: 2rem;
+}
+
+.social-icon {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+.article-img{
+  height: 241px;
+  width: auto;
+  min-width: 100%;
+  min-height: 100%
+}
 
 .myNav{
   //display: flex;
   //justify-content: center;
-  background-color: $cre-black !important;
+  background-color: $cre-header !important;
 
   ul {
     list-style-type: none;
@@ -72,7 +225,6 @@ body{
     padding: 0;
     overflow: hidden;
     background-color: transparent;
-    border-radius: 10px;
   }
 
   li {
