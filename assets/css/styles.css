@@ -5479,6 +5479,9 @@ i.fi-magnifying-glass {
 .lime-green-bg {
   background-color: #99d053; }
 
+.dark-bg {
+  background-color: #000001 !important; }
+
 .green-yellow-gradient-bg {
   background: linear-gradient(to right, rgba(0, 114, 92, 0.827), rgba(147, 204, 83, 0.7)); }
 
@@ -5558,6 +5561,17 @@ i.fi-bookmark {
   min-width: 100%;
   min-height: 100%; }
 
+.overlay-container {
+  position: relative; }
+
+.overlay-container .overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 75%;
+  padding: 0.4rem;
+  background-color: rgba(255, 255, 255, 0.9); }
+
 .myNav {
   background-color: #20252f !important; }
   .myNav ul {
@@ -5576,3 +5590,51 @@ i.fi-bookmark {
       text-decoration: none; }
     .myNav li a:hover {
       background-color: #111; }
+
+.size-6 {
+  font-size: 6px; }
+
+.size-7 {
+  font-size: 7px; }
+
+.size-8 {
+  font-size: 8px; }
+
+.size-9 {
+  font-size: 9px; }
+
+.size-10 {
+  font-size: 10px; }
+
+.size-11 {
+  font-size: 11px; }
+
+.size-12 {
+  font-size: 12px; }
+
+.size-14 {
+  font-size: 14px; }
+
+.size-16 {
+  font-size: 16px; }
+
+.size-18 {
+  font-size: 18px; }
+
+.size-21 {
+  font-size: 21px; }
+
+.size-24 {
+  font-size: 24px; }
+
+.size-36 {
+  font-size: 36px; }
+
+.size-48 {
+  font-size: 48px; }
+
+.size-60 {
+  font-size: 60px; }
+
+.size-72 {
+  font-size: 72px; }
