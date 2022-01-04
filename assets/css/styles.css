@@ -5405,6 +5405,10 @@ ol.list-upper-roman {
   font-family: ProximaNova;
   src: url(../fonts/proxima_nova_font.otf); }
 
+@font-face {
+  font-family: MilliardThin;
+  src: url(../fonts/thin_font.otf); }
+
 body {
   font-family: ProximaNova, serif; }
 
@@ -5421,15 +5425,15 @@ hr {
 
 .home-bg-image {
   position: relative;
-  height: 100vh;
   width: 100%;
   align-items: center;
   justify-content: center;
   background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url("../images/the-ridge-bg.jpeg");
-  background-size: cover; }
+  background-size: cover;
+  min-height: 600px; }
 
 .filter-home-form {
-  background: #ffffff !important;
+  background: #ffffff;
   display: inline-block;
   vertical-align: bottom;
   text-align: center; }
@@ -5437,17 +5441,17 @@ hr {
     color: #ffffff;
     background-color: #f4841e; }
   .filter-home-form .range-span {
-    color: #f4841e !important; }
+    color: #f4841e; }
 
 i.fi-magnifying-glass {
   color: #ffffff;
   font-size: 1.3rem;
-  margin-bottom: 0 !important;
+  margin-bottom: 0;
   margin-left: 2px;
   margin-right: 10px; }
 
 .orange-btn {
-  background-color: #f4841e !important; }
+  background-color: #f4841e; }
 
 .white-text {
   color: #ffffff !important; }
@@ -5489,7 +5493,7 @@ i.fi-magnifying-glass {
   border: none !important; }
 
 .round-btn {
-  border-radius: 20px; }
+  border-radius: 50px; }
 
 .round-btn-mid {
   border-radius: 5px; }
@@ -5501,48 +5505,49 @@ i.fi-magnifying-glass {
 
 .green-bg {
   position: relative;
-  height: 100vh;
   width: 100%;
   align-items: center;
   justify-content: center;
   background-image: url("../images/greenish-bg.jpeg");
-  background-size: cover; }
+  background-size: cover;
+  padding-top: 5em;
+  padding-bottom: 5em; }
 
 .amara-bg {
   position: relative;
-  height: 100vh;
   width: 100%;
   align-items: center;
   justify-content: center;
   background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url("../images/ama-ridge-pool.png");
-  background-size: cover; }
+  background-size: cover;
+  min-height: 309px; }
 
 .situ-bg {
   position: relative;
-  height: 100vh;
   width: 100%;
   align-items: center;
   justify-content: center;
   background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url("../images/situ-village.jpeg");
-  background-size: cover; }
+  background-size: cover;
+  min-height: 309px; }
 
 .alma-bg {
   position: relative;
-  height: 100vh;
   width: 100%;
   align-items: center;
   justify-content: center;
   background-color: #8c1930;
-  background-size: cover; }
+  background-size: cover;
+  min-height: 309px; }
 
 .heights-bg {
   position: relative;
-  height: 50vh;
   width: 100%;
   align-items: center;
   justify-content: center;
   background-image: linear-gradient(to right, rgba(44, 35, 15, 0.827), rgba(253, 197, 21, 0.7)), url("../images/height-bg.jpeg");
-  background-size: 100% 100%; }
+  background-size: cover;
+  min-height: 345px; }
 
 i.fi-bookmark {
   font-size: 2rem; }
@@ -5573,7 +5578,7 @@ i.fi-bookmark {
   background-color: rgba(255, 255, 255, 0.9); }
 
 .myNav {
-  background-color: #20252f !important; }
+  background-color: #20252f; }
   .myNav ul {
     list-style-type: none;
     margin: 0;
@@ -5590,6 +5595,43 @@ i.fi-bookmark {
       text-decoration: none; }
     .myNav li a:hover {
       background-color: #111; }
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  font-family: ProximaNova, serif, serif;
+  font-style: normal;
+  font-weight: normal;
+  color: inherit;
+  text-rendering: optimizeLegibility; }
+
+.thin-font {
+  font-family: MilliardThin, sans-serif;
+  font-weight: 500; }
+
+.large-5 .cell .filter-home-form {
+  position: absolute;
+  bottom: 0;
+  right: 10%; }
+
+@media (max-width: 768px) {
+  .home-bg-image p {
+    text-align: center; }
+  .home-bg-image button {
+    align-self: center; }
+  .myNav {
+    background-color: #0a0a0a; }
+  .myBanner .close-button {
+    padding: 0;
+    margin: 0; } }
+
+.circle-border {
+  background-color: black;
+  border: 1px solid #818283;
+  border-radius: 50%; }
 
 .size-6 {
   font-size: 6px; }

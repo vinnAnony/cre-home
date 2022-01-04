@@ -1,10 +1,13 @@
 @import "../../node_modules/foundation-sites/scss/foundation.scss";
-//@import "../../node_modules/foundation-sites/dist/css/foundation.css";
 @include foundation-everything($prototype: true);
 
 @font-face {
   font-family: ProximaNova;
   src: url(../fonts/proxima_nova_font.otf);
+}
+@font-face {
+  font-family: MilliardThin;
+  src: url(../fonts/thin_font.otf);
 }
 
 @mixin centerTxt(){
@@ -22,6 +25,9 @@ $cre-lime-green: rgb(153,208,83);
 $cre-header: rgb(32,37,47);
 $cre-footer-1: rgb(18,19,20);
 $cre-footer-2: $cre-black;
+
+$proxima: ProximaNova, serif;
+$thin-font: MilliardThin, sans-serif;
 
 //Change default values
 $slider-handle-background: $cre-orange;
@@ -46,38 +52,43 @@ hr{
 
 .home-bg-image{
   position: relative;
-  height: 100vh;
   width: 100%;
   align-items: center;
   justify-content: center;
   background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url('../images/the-ridge-bg.jpeg');
   background-size: cover;
+  min-height: 600px;
 }
 
 .filter-home-form{
-  background: $cre-white !important;
+  background: $cre-white;
   display:inline-block;
   vertical-align: bottom;
   text-align: center;
+
+  //form{
+  //  height: 335px;
+  //  width: 304px;
+  //}
 
   .filter-home-form-header{
     color: $cre-white;
     background-color: $cre-orange;
   }
   .range-span{
-    color: $cre-orange !important;
+    color: $cre-orange ;
   }
 }
 i.fi-magnifying-glass {
   color: $cre-white;
   font-size: 1.3rem;
-  margin-bottom: 0 !important;
+  margin-bottom: 0 ;
   margin-left: 2px;
   margin-right: 10px;
 }
 
 .orange-btn{
-  background-color: $cre-orange !important;
+  background-color: $cre-orange;
 }
 
 .white-text{
@@ -133,7 +144,7 @@ i.fi-magnifying-glass {
 }
 
 .round-btn{
-  border-radius: 20px;
+  border-radius: 50px;
 }
 
 .round-btn-mid{
@@ -150,52 +161,53 @@ i.fi-magnifying-glass {
 }
 .green-bg{
   position: relative;
-  height: 100vh;
   width: 100%;
   align-items: center;
   justify-content: center;
   background-image: url('../images/greenish-bg.jpeg');
   background-size: cover;
+  padding-top: 5em;
+  padding-bottom: 5em;
 }
 
 .amara-bg{
   position: relative;
-  height: 100vh;
   width: 100%;
   align-items: center;
   justify-content: center;
   background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url('../images/ama-ridge-pool.png');
   background-size: cover;
+  min-height: 309px;
 }
 
 .situ-bg{
   position: relative;
-  height: 100vh;
   width: 100%;
   align-items: center;
   justify-content: center;
   background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url('../images/situ-village.jpeg');
   background-size: cover;
+  min-height: 309px;
 }
 
 .alma-bg{
   position: relative;
-  height: 100vh;
   width: 100%;
   align-items: center;
   justify-content: center;
   background-color: rgb(140,25,48);
   background-size: cover;
+  min-height: 309px;
 }
 
 .heights-bg{
   position: relative;
-  height: 50vh;
   width: 100%;
   align-items: center;
   justify-content: center;
   background-image: linear-gradient(to right,rgba(44, 35, 15, 0.827), rgba(253, 197, 21, 0.7)) , url('../images/height-bg.jpeg');
-  background-size: 100% 100%;
+  background-size: cover;
+  min-height: 345px;
 }
 
 i.fi-bookmark {
@@ -234,7 +246,7 @@ i.fi-bookmark {
 .myNav{
   //display: flex;
   //justify-content: center;
-  background-color: $cre-header !important;
+  background-color: $cre-header ;
 
   ul {
     list-style-type: none;
@@ -259,6 +271,54 @@ i.fi-bookmark {
       background-color: #111;
     }
   }
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  font-family: $proxima, serif;
+  font-style: normal;
+  font-weight: normal;
+  color: inherit;
+  text-rendering: optimizeLegibility; }
+
+.thin-font{
+  font-family: $thin-font;
+  font-weight: 500;
+}
+
+.large-5 .cell .filter-home-form{
+  position: absolute;
+  bottom: 0;
+  right: 10%;
+}
+@media (max-width: 768px){
+  .home-bg-image{
+
+    p{
+      text-align: center;
+    }
+    button{
+      align-self: center;
+    }
+  }
+
+  .myNav{
+    background-color: $black;
+  }
+.myBanner .close-button{
+  padding: 0;
+  margin: 0;
+}
+}
+
+.circle-border {
+  background-color:$cre-transparent;
+  border:1px solid $cre-grey;
+  border-radius: 50%;
 }
 
 //Font sizes
